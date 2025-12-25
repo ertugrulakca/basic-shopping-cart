@@ -4,15 +4,18 @@
 
 * auth ✅
 * browse product (name, price, stock_quantity) ✅
-* add to cart (store in database)
-* update quantity
-* remove items 
+* add to cart (store in database) ✅
+* update quantity ✅
+* remove items ✅
 * Low Stock Notification (Send email to admin w Job&Queue)
 * Daily Sales Report 
     * Scheduled cron
     * every evening 
     * all products sold that day
-    *  send email
+    * send email
+
+* dockerize ✅
+* tests ✅
 
 ## use
 

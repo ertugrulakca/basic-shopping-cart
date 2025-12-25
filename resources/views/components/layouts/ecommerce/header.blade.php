@@ -22,27 +22,21 @@
         </label>
     </div>
     <div class="flex flex-1 justify-end gap-8">
-        <div class="flex items-center gap-9 hidden lg:flex">
-            <a class="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary"
-                href="{{ route('home') }}">Home</a>
-            <a class="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary"
-                href="#">Shop</a>
-            <a class="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary"
-                href="#">Deals</a>
-            <a class="text-[#111418] dark:text-white text-sm font-medium leading-normal hover:text-primary"
-                href="#">Contact</a>
-        </div>
         <div class="flex gap-2">
+            <a href="{{ route('home') }}"
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f2f4] dark:bg-[#333] text-[#111418] dark:text-white hover:bg-[#e0e2e4] dark:hover:bg-[#444] transition-colors gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 relative">
+                <span class="material-symbols-outlined text-[20px]">home</span>
+            </a>
             <button @click="darkMode = !darkMode"
                 class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f2f4] dark:bg-[#333] text-[#111418] dark:text-white hover:bg-[#e0e2e4] dark:hover:bg-[#444] transition-colors gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
                 <span class="material-symbols-outlined text-[20px]" x-text="darkMode ? 'light_mode' : 'dark_mode'"></span>
             </button>
             
-            <button
+            <a href="{{ route('cart') }}"
                 class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f2f4] dark:bg-[#333] text-[#111418] dark:text-white hover:bg-[#e0e2e4] dark:hover:bg-[#444] transition-colors gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 relative">
                 <span class="material-symbols-outlined text-[20px]">shopping_cart</span>
                 <span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-primary"></span>
-            </button>
+            </a>
             
             @auth
                 <button wire:click="logout" type="button"

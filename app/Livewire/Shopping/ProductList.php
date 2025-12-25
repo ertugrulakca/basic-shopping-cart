@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Shopping\Products;
+namespace App\Livewire\Shopping;
 
 use App\Models\Order;
 use App\Models\OrderItem;
@@ -107,7 +107,7 @@ class ProductList extends Component
 
     public function render()
     {
-        return view('livewire.products.product-list');
+        return view('livewire.shopping.product-list');
     }
 }
 

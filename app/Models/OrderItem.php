@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class OrderItem extends Model
 {
+    use HasFactory;
+    
     protected $fillable = ['order_id', 'product_id', 'quantity', 'product_name', 'price'];
 
     public function order()
@@ -20,6 +23,6 @@ class OrderItem extends Model
 
     public function getSubTotalPriceAttribute()
     {
-        return $this->quantity * $this->price;
+        return $this->quantity * $this->product->price;
     }
 }

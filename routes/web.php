@@ -1,6 +1,7 @@
 <?php
 
-use App\Livewire\Shopping\Products\ProductList;
+use App\Livewire\Shopping\Cart;
+use App\Livewire\Shopping\ProductList;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
@@ -9,6 +10,7 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
 Route::get('/', ProductList::class)->name('home');
+Route::get('/cart', Cart::class)->name('cart')->middleware('auth');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
