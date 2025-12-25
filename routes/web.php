@@ -6,11 +6,13 @@ use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\TwoFactor;
+use App\Livewire\Shopping\OrderConfirmation;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
 Route::get('/', ProductList::class)->name('home');
 Route::get('/cart', Cart::class)->name('cart')->middleware('auth');
+Route::get('/order-confirmation/{orderId}', OrderConfirmation::class)->name('order-confirmation')->middleware('auth');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

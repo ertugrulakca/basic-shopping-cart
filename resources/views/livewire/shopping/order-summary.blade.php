@@ -32,6 +32,7 @@
                 </div>
             </div>
             <button
+                wire:click="proceedToCheckout"
                 class="w-full rounded-lg bg-primary hover:bg-blue-600 py-3.5 px-4 text-center text-sm font-bold text-white shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-[#1C252E]">
                 Proceed to Checkout
             </button>
@@ -39,9 +40,8 @@
                 class="mt-4 flex flex-col gap-2 items-center justify-center text-xs text-[#617589] dark:text-gray-400">
                 <div class="flex items-center gap-1.5">
                     <span class="material-symbols-outlined text-base">lock</span>
-                    <span>Secure Checkout</span>
+                    <span>Demo application not real</span>
                 </div>
-                <p>30-Day Money-Back Guarantee</p>
             </div>
         </div>
     </div>

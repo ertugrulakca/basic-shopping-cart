@@ -14,8 +14,9 @@
     * all products sold that day
     * send email
 
-* dockerize ✅
-* tests ✅
+* proceed to checkout + confirmation page -> did for sales report and low stock notification ⚡️
+* dockerize ⚡️
+* tests ⚡️
 
 ## use
 
