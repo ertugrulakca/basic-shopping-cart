@@ -23,7 +23,7 @@
 
 * reply with github repository
 * brief loom video (showcase, code explanation)
-* time: 
+* took time: 11 hours and 30 minutes including breaks
 
 
 ## Installation
