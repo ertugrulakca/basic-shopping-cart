@@ -17,10 +17,7 @@
 * proceed to checkout + confirmation page -> did for sales report and low stock notification ⚡️
 * dockerize ⚡️
 * tests ⚡️
-
-## use
-
-* starter kit: livewire, react, vue
+* starter kit: livewire ⚡️
 
 ## submission
 

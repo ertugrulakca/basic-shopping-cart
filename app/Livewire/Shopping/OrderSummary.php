@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Shopping;
 
+use App\Events\OrderCompleted;
 use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
@@ -68,6 +69,8 @@ class OrderSummary extends Component
         $order->update(['status' => 'paid']);
 
         session()->flash('message', 'Order paid successfully');
+
+        OrderCompleted::dispatch($order);
 
         return redirect()->route('order-confirmation', $order->id);
     }
