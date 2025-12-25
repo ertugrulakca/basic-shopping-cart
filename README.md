@@ -2,8 +2,8 @@
 
 ## todolist
 
-* auth 
-* browse product (name, price, stock_quantity)
+* auth ✅
+* browse product (name, price, stock_quantity) ✅
 * add to cart (store in database)
 * update quantity
 * remove items 
