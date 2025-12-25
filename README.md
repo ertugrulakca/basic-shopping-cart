@@ -7,12 +7,12 @@
 * add to cart (store in database) ✅
 * update quantity ✅
 * remove items ✅
-* Low Stock Notification (Send email to admin w Job&Queue)
-* Daily Sales Report 
-    * Scheduled cron
-    * every evening 
-    * all products sold that day
-    * send email
+* Low Stock Notification (Send email to admin w Job&Queue) ✅
+* Daily Sales Report ✅
+    * Scheduled cron ✅
+    * every evening ✅
+    * all products sold that day ✅
+    * send email ✅
 
 * proceed to checkout + confirmation page -> did for sales report and low stock notification ⚡️
 * dockerize ⚡️

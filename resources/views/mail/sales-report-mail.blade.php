@@ -1,12 +1,25 @@
 <x-mail::message>
-# Introduction
+# Daily Sales Report
 
-The body of your message.
+Here's your daily sales summary:
 
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
+## Orders Summary
 
-Thanks,<br>
-{{ config('app.name') }}
+@foreach($orders as $order)
+### Order #{{ $order->id }}
+
+<x-mail::table>
+| Product | Quantity | Price | Subtotal |
+|:--------|:--------:|---------:|---------:|
+@foreach($order->items as $item)
+| {{ $item->product->name }} | {{ $item->quantity }} | ${{ number_format($item->price, 2) }} | ${{ number_format($item->quantity * $item->price, 2) }} |
+@endforeach
+| | | **Total:** | **${{ number_format($order->totalPrice, 2) }}** |
+</x-mail::table>
+
+---
+
+@endforeach
+
+Thanks for reviewing today's sales report!
 </x-mail::message>

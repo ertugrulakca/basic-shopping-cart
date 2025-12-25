@@ -66,7 +66,7 @@ class OrderSummary extends Component
         }
 
         // update order status
-        $order->update(['status' => 'paid']);
+        $order->update(['status' => 'paid', 'paid_at' => now()]);
 
         session()->flash('message', 'Order paid successfully');
 

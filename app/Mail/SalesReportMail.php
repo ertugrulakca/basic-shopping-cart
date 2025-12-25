@@ -4,6 +4,7 @@ namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -16,7 +17,7 @@ class SalesReportMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(public Collection $orders)
     {
         //
     }
@@ -38,6 +39,9 @@ class SalesReportMail extends Mailable
     {
         return new Content(
             markdown: 'mail.sales-report-mail',
+            with: [
+                'orders' => $this->orders,
+            ],
         );
     }
 
