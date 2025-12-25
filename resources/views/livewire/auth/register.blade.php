@@ -168,7 +168,7 @@
                 <!-- Footer Links -->
                 <div class="text-center mt-8 space-y-4">
                     <p class="text-[#617589] dark:text-gray-400 text-sm">
-                        © 2024 This application is a demo for a technical interview purpose. Not a real application.
+                        <p>This application is a demo purpose. Not a real application.</p>
                     </p>
                 </div>
             </div>

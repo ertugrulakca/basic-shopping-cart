@@ -23,7 +23,7 @@
 
 * reply with github repository
 * brief loom video (showcase, code explanation)
-* time
+* time: 
 
 
 ## Installation
@@ -59,3 +59,33 @@ docker exec -it basic-shopping-cart-app-1 bash
 ```shell
 composer run setup
 ```
+
+6. DB Seed
+
+```shell
+php artisan db:seed
+```
+
+
+## Screenshots
+
+### Home Page
+![Home Screen](screenshoots/home.png)
+
+### Shopping Cart
+![Cart](screenshoots/cart.png)
+
+### Login Page
+![Login](screenshoots/login.png)
+
+### Register Page
+![Register](screenshoots/register.png)
+
+### Order Confirmation
+![Confirmation](screenshoots/confirmation.png)
+
+### Daily Sales Report Email
+![Daily Sales Report](screenshoots/daily-sales-report-mail.png)
+
+### Low Stock Alert Email
+![Low Stock Alert](screenshoots/low-stock-alert-mail.png)
